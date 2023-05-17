@@ -1,0 +1,231 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.main{
+    height: 41vh;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 0 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.main__grey{
+    color: hsla(241, 100%, 89%, .85);
+}
+
+.main__circle{
+    height: 120px;
+    width: 120px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.main__score{
+    color: hsl(0, 0%, 100%);
+    font-size: 45px;
+}
+
+.main__total{
+    color: hsla(241, 100%, 89%, .5);
+}
+
+.main__title{
+    color: hsl(0, 0%, 100%);
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.main__content{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.main__paragraph{
+    margin-bottom: 10px;
+    padding: 0 38px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.statistics {
+    margin: 0 15px;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.statistics__title{
+    margin: 0 22px;
+    font-size: 18px;
+}
+.results__list{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.results__item{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.results__title{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.results__item--reaction{
+    background-color: hsla(0, 100%, 67%, .06);
+    border-radius: 15px;
+    color: hsla(0, 100%, 67%, .9);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.results__item--memory{
+    background-color: hsla(39, 100%, 56%, .06);
+    border-radius: 15px;
+    color: hsla(39, 100%, 56%, .9);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.results__item--verbal{
+    background-color: hsla(166, 100%, 37%, .06);
+    border-radius: 15px;
+    color: hsla(166, 100%, 37%, .9);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.results__item--visual{
+    background-color: hsla(234, 85%, 45%, .06);
+    border-radius: 15px;
+    color: hsla(234, 85%, 45%, .9);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.results__score{
+    font-weight: 800;
+    color: hsla(0, 0%, 0%, .8);
+}
+
+.results__score--two{
+    color: hsla(0, 0%, 50%, .9);
+    font-weight: 700;
+}
+
+.statistics__button{
+    width: 300px;
+    height: 52px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(224, 30%, 27%);
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+
+@media (min-width: 768px) {
+    .grid{
+        width: 680px;
+        height: 450px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 5px 10px 30px hsla(225, 100%, 39%, .17);
+        border-radius: 30px 30px;
+    }
+
+    .main{
+        height: 100%;
+        margin: 0;
+        border-radius: 30px 30px;
+        justify-content: space-evenly;
+    }
+
+    .main__first{
+        font-size: 22px;
+    }
+
+    .main__title{
+        font-size: 27px;
+    }
+
+    .main__paragraph{
+        font-size: 17px;
+    }
+
+    .main__score{
+        font-size: 60px;
+    }
+
+    .main__circle{
+        width: 180px;
+        height: 180px;
+    }
+
+    .statistics{
+        height: 100%;
+        margin: 0;
+    }
+
+    .statistics__title{
+        font-size: 22px;
+        margin: 0 38px 18px;
+    }
+
+    .results__list{
+        margin: 0 38px; 
+    }
+
+    .statistics__button{
+        width: 260px;
+    }
+
+    .statistics__button:hover{
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+
+}
